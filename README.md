@@ -13,8 +13,8 @@ Lab1
 | 111  |  101  |  101  |  
 
 #Simplified Equations
-X = AB'C'+A'B+A'C
-Y = BC'+B'C
+X = AB'C'+A'B+A'C                                                                                                         
+Y = BC'+B'C                                                                                                               
 Z = C
 
 The outputs from the simulation matched up perfectly with the expected outputs from the truth table initially created. The testbench file was created the exact same way as in CE1.
