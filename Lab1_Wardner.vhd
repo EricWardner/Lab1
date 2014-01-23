@@ -5,7 +5,7 @@
 -- Create Date:    18:44:28 01/22/2014 
 -- Design Name: 
 -- Module Name:    Lab1_Wardner - Behavioral 
--- Project Name: 
+-- Project Name:   Lab1
 -- Target Devices: 
 -- Tool versions: 
 -- Description: 
@@ -40,8 +40,21 @@ end Lab1_Wardner;
 
 architecture Behavioral of Lab1_Wardner is
 
+signal A_NOT, B_NOT, C_NOT, ABnotCnot, AnotB, AnotC, BCnot, BnotC : STD_LOGIC;
+
 begin
 
+A_NOT <= not A;
+B_NOT <= not B;
+C_NOT <= not C;
+ABnotCnot <= A and B_NOT and C_NOT;
+AnotB <= A_NOT and B;
+AnotC <= A_NOT and C;
+BCnot <= B and C_NOT;
+BnotC <= B_NOT and C;
+X <= ABnotCnot or AnotB or AnotC;
+Y <= BCnot or BnotC;
+Z <= C;
 
 end Behavioral;
 
