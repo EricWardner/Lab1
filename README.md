@@ -11,3 +11,5 @@ Lab1
 | 101  |  011  |  011  |  
 | 110  |  110  |  110  |
 | 111  |  101  |  101  |  
+
+The outputs from the simulation matched up perfectly with the expected outputs from the truth table initially created.
