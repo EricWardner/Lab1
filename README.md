@@ -1,6 +1,6 @@
 Lab1
 ====
-
+#Truth Table
 |  inputs |  expected value  |  actual value  | 
 |:--:|:--: |:--: |
 | 000  |  000  |  000  |  
