@@ -24,7 +24,18 @@ The outputs from the simulation matched up perfectly with the expected outputs f
 
 
 #Code
-The following code shows 8-bit functionality
+Initially, for 3-bit funcionality the input and output signals must be declared
+
+```VHDL
+ Port ( 
+	A : in  STD_LOGIC;
+        B : in  STD_LOGIC;
+        C : in  STD_LOGIC;
+        X : out  STD_LOGIC;
+        Y : out  STD_LOGIC;
+        Z : out  STD_LOGIC);
+end Lab1_Wardner;
+```
 
 ```VHDL
 ----------------------------------------------------------------------------------
