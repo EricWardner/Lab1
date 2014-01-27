@@ -37,9 +37,19 @@ end Lab1_Wardner;
 ```
 Then the output signals are defined as functions of the input, this is what converts the inputs to 2's compliment.
 ```VHDL
-X <= ABnotCnot or AnotB or AnotC;
-Y <= BCnot or BnotC;
-Z <= C;
+begin
+	A_NOT <= not A;
+	B_NOT <= not B;
+	C_NOT <= not C;
+	ABnotCnot <= A and B_NOT and C_NOT;
+	AnotB <= A_NOT and B;
+	AnotC <= A_NOT and C;
+	BCnot <= B and C_NOT;
+	BnotC <= B_NOT and C;
+	X <= ABnotCnot or AnotB or AnotC;
+	Y <= BCnot or BnotC;
+	Z <= C;
+end Behavioral
 ```
 
 ```VHDL
