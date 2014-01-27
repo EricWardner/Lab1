@@ -24,6 +24,7 @@ The outputs from the simulation matched up perfectly with the expected outputs f
 
 
 #Code
+The following code shows 8-bit functionality
 
 ```VHDL
 ----------------------------------------------------------------------------------
@@ -96,3 +97,4 @@ X <= std_logic_vector(UNSIGNED(not(A)) + 1);
 
 end Behavioral;
 ```
+
