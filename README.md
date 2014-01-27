@@ -93,6 +93,6 @@ X <= std_logic_vector(UNSIGNED(not(A)) + 1);
 --X <= ABnotCnot or AnotB or AnotC;
 --Y <= BCnot or BnotC;
 --Z <= C;
-```
 
 end Behavioral;
+```
