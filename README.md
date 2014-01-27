@@ -100,4 +100,9 @@ NET "X" LOC = "K15";
 NET "Y" LOC = "J15";
 NET "Z" LOC = "J14";
 ```
-Once the FPGA was programmed both the 3-bit and 8-bit functioanlity were checked to work by Captain Silva.
+
+#Debugging
+Some syntax problems were had with both the 3-bit and8-bit iterations of the code. It was discovered that ' marks can not be used in variable names after the variable "A'B" was attempted to be created. In the 8-bit .ucf file it took some timeto understand how to use the vector with paranthesis "A(0)" as apposed to how the file was implemented in the 3-bit code.
+
+#Testing
+Once the FPGA was programmed both the 3-bit and 8-bit functioanlity were checked to work by Captain Silva. The FPGA had full functionality for both the 3-bit and 8-bit implementations.
