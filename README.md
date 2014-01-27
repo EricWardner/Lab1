@@ -11,8 +11,6 @@ Lab1
 | 101  |  011  |  011  |  
 | 110  |  110  |  110  |
 | 111  |  101  |  101  |  
-
-#Simplified Equations
 X = AB'C'+A'B+A'C                                                                                                         
 Y = BC'+B'C                                                                                                               
 Z = C
