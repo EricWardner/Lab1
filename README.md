@@ -17,10 +17,12 @@ X = AB'C'+A'B+A'C
 Y = BC'+B'C                                                                                                               
 Z = C
 
-#Summary
+#Schematic
 ![alt tag](https://raw.github.com/EricWardner/Lab1/master/Schematic.PNG)
+#Waveform
 ![alt tag](https://raw.github.com/EricWardner/Lab1/master/Capture.PNG)
-The outputs from the simulation matched up perfectly with the expected outputs from the truth table initially created. The testbench file was created the exact same way as in CE1.
+#Analysis
+The outputs from the simulation matched up perfectly with the expected outputs from the truth table initially created. The testbench file was created the exact same way as in CE1. The UCF file was sucessfully created and the gate programmed.
 
 
 #Code
