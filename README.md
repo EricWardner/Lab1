@@ -25,16 +25,21 @@ The outputs from the simulation matched up perfectly with the expected outputs f
 
 #Code
 Initially, for 3-bit funcionality the input and output signals must be declared
-
 ```VHDL
  Port ( 
-	A : in  STD_LOGIC;
+	  A : in  STD_LOGIC;
         B : in  STD_LOGIC;
         C : in  STD_LOGIC;
         X : out  STD_LOGIC;
         Y : out  STD_LOGIC;
         Z : out  STD_LOGIC);
 end Lab1_Wardner;
+```
+Then the output signals are defined as functions of the input, this is what converts the inputs to 2's compliment.
+```VHDL
+X <= ABnotCnot or AnotB or AnotC;
+Y <= BCnot or BnotC;
+Z <= C;
 ```
 
 ```VHDL
