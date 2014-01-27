@@ -67,3 +67,37 @@ X <= std_logic_vector(UNSIGNED(not(A)) + 1);
 
 end Behavioral
 ```
+In order for the gate to be programmed, a .ucf file defining the location of where the inputs and outputs go on the boards had to be created
+```ucf
+#====== INPUTS =======
+NET "A[7]" LOC = "R17";							
+NET "A[6]" LOC = "N17";
+NET "A[5]" LOC = "L13";
+NET "A[4]" LOC = "L14";
+NET "A[3]" LOC = "K17";
+NET "A[2]" LOC = "K18";
+NET "A[1]" LOC = "H18";
+NET "A[0]" LOC = "G18";
+
+#======OUTPUTS======
+NET "X[7]" LOC = "R4";
+NET "X[6]" LOC = "F4";
+NET "X[5]" LOC = "P15";
+NET "X[4]" LOC = "E17";
+NET "X[3]" LOC = "K14";
+NET "X[2]" LOC = "K15";
+NET "X[1]" LOC = "J15";
+NET "X[0]" LOC = "J14";
+```
+```ucf
+#====== INPUTS =======
+NET "A" LOC = "K18";							
+NET "B" LOC = "H18";
+NET "C" LOC = "G18";
+
+#======OUTPUTS======
+NET "X" LOC = "K15";							
+NET "Y" LOC = "J15";
+NET "Z" LOC = "J14";
+```
+Once the FPGA was programmed both the 3-bit and 8-bit functioanlity were checked to work by Captain Silva.
