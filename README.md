@@ -28,11 +28,11 @@ Initially, for 3-bit funcionality the input and output signals must be declared
 ```VHDL
  Port ( 
 	  A : in  STD_LOGIC;
-        B : in  STD_LOGIC;
-        C : in  STD_LOGIC;
-        X : out  STD_LOGIC;
-        Y : out  STD_LOGIC;
-        Z : out  STD_LOGIC);
+       B : in  STD_LOGIC;
+       C : in  STD_LOGIC;
+       X : out  STD_LOGIC;
+       Y : out  STD_LOGIC;
+       Z : out  STD_LOGIC);
 end Lab1_Wardner;
 ```
 Then the output signals are defined as functions of the input, this is what converts the inputs to 2's compliment.
@@ -51,7 +51,14 @@ begin
 	Z <= C;
 end Behavioral
 ```
-
+updating the code for 8-bit functionality introduces the std_logic_vector. Again, the input and outputs are declared.
+```VHDL
+Port(
+	   --Inputs
+           A : in std_logic_vector (7 downto 0);
+           --Outputs
+           X : out std_logic_vector (7 downto 0));
+```
 ```VHDL
 ----------------------------------------------------------------------------------
 -- Company: 
